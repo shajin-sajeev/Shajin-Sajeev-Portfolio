@@ -86,3 +86,28 @@ window.addEventListener('scroll', function() {
   }
 });
 
+// Profile picture modal functionality
+const navProfilePic = document.querySelector('.nav-profile-pic');
+const profileModal = document.getElementById('profileModal');
+const closeBtn = document.querySelector('.close-btn');
+
+if (navProfilePic) {
+  navProfilePic.addEventListener('click', () => {
+    profileModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+}
+
+if (closeBtn) {
+  closeBtn.addEventListener('click', () => {
+    profileModal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  });
+}
+
+profileModal.addEventListener('click', (e) => {
+  if (e.target === profileModal) {
+    profileModal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+});
