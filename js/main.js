@@ -86,8 +86,6 @@ window.addEventListener('scroll', function() {
   }
 });
 
-<<<<<<< HEAD
-=======
 // Profile picture modal functionality
 const navProfilePic = document.querySelector('.nav-profile-pic');
 const profileModal = document.getElementById('profileModal');
@@ -113,4 +111,3 @@ profileModal.addEventListener('click', (e) => {
     document.body.style.overflow = 'auto';
   }
 });
->>>>>>> 060039030a5ea67fc8b7bc406c759c693b0907eb
