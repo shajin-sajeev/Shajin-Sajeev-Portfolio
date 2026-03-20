@@ -27,6 +27,8 @@
     />
   </head>
   <body>
+    <!-- 3D Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
     <!-- Navigation -->
     <nav class="navbar">
       <div class="container">
@@ -50,17 +52,24 @@
     <!-- Hero Section -->
     <section id="hero" class="hero">
       <div class="container hero-content">
-        <h1 class="animate-text">
-          Hello, I'm <span class="highlight">Shajin Sajeev</span>
-        </h1>
-        <h2 class="subtitle">I build <span class="typing-effect"></span></h2>
-        <p class="hero-description">
-          Specializing in high-performance Laravel integrations for global
-          e-commerce brands. Connecting NetSuite, Shopify, and other platforms into seamless ecosystems.
-        </p>
-        <div class="cta-group">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#footer" class="btn btn-outline">Contact Me</a>
+        <div class="hero-text">
+          <h1 class="animate-text">
+            Hello, I'm <span class="highlight">Shajin Sajeev</span>
+          </h1>
+          <h2 class="subtitle">I build <span class="typing-effect"></span></h2>
+          <p class="hero-description">
+            Specializing in high-performance Laravel integrations for global
+            e-commerce brands. Connecting NetSuite, Shopify, and other platforms into seamless ecosystems.
+          </p>
+          <div class="cta-group">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#footer" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-img-container">
+            <img src="https://github.com/shajin-sajeev.png" alt="Shajin Sajeev" class="profile-img">
+          </div>
         </div>
       </div>
     </section>
@@ -435,6 +444,8 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/three-bg.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
